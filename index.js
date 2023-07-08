@@ -1,7 +1,7 @@
 const Button = (props) => {
   //  Write your code here.
-  const { className } = props;
-  return <button>{className}</button>;
+  const { className, buttonText } = props;
+  return <button className={`${className}`}>{buttonText}</button>;
 };
 
 const element = (
@@ -10,9 +10,9 @@ const element = (
     <div className="content-container">
       <h1 className="main-heading">Social Buttons</h1>
       <div className="button-container">
-        <button className="likeBtn">Like</button>
-        <button className="commentBtn">Comment</button>
-        <button className="shareBtn">Share</button>
+        <Button className="likeBtn" buttonText="Like" />>
+        <Button className="commentBtn" buttonText="Comment" />>
+        <Button className="shareBtn" buttonText="Share" />>
       </div>
     </div>
   </div>
